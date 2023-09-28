@@ -259,6 +259,7 @@ MonoBehaviour:
   radio: 2
   obstacleList: []
   ObstaclePosition: []
+  maxSpawn: 20
   rangoX: 10
   rangoY: 10
 --- !u!4 &507321940
@@ -614,5 +615,13 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1618984212}
+    - target: {fileID: 8224892574449828590, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828591, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}

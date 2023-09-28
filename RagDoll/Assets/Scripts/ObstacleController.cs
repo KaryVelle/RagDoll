@@ -11,12 +11,13 @@ public class ObstacleController : MonoBehaviour
   public float radio;
   public List<GameObject> obstacleList;
   public List<Vector3> ObstaclePosition;
+  public float maxSpawn;
   public float rangoX;
   public float rangoY;
 
   private void Start()
   {
-    float total = Random.Range(1, 10);
+    float total = Random.Range(1, maxSpawn);
     for (int i = 0; i <= total; i++)
     {
       Vector3 randomPos = new Vector3(Random.Range(-rangoX, rangoX), 1f, Random.Range(-rangoY,rangoY));
