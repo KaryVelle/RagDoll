@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody rb;
     [SerializeField] int speed;
     [SerializeField] float mouseX;
+    public CharacterController cc;
     
 
     // Start is called before the first frame update
@@ -21,26 +22,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("d"))
-        {
-            rb.velocity= (new Vector3(1 * speed,0, 0) );
-        }
-        if (Input.GetKeyDown("a"))
-        {
-            rb.velocity = (new Vector3(1 * speed *-1, 0, 0));
-        }
-        if (Input.GetKeyDown("w"))
-        {
-            rb.velocity = (new Vector3(0 , 0, 1 * speed));
-        }
-        if (Input.GetKeyDown("s"))
-        {
-            rb.velocity = (new Vector3(0, 0, 1 * speed *-1));
-        }
 
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
         mouseX = Input.GetAxis("Mouse X");
+        Vector3 move = transform.right * x + transform.forward * z;
        
         rb.transform.Rotate(0, mouseX, 0);
+        cc.Move(move * speed * Time.deltaTime);
+
+
 
     }
 }
