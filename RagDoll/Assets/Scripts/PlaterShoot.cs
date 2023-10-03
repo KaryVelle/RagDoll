@@ -24,7 +24,9 @@ public class PlaterShoot : MonoBehaviour
                     gun.position ,Quaternion.identity
                    );
  
-            instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0,speed));
+            instantiatedProjectile.AddForce(transform.forward * speed); 
+            
+            
             Destroy(projectile, 3);
         }
     }
