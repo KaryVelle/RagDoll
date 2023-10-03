@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5047203354008069503
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8224892574449828587, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_Name
+      value: Enemy Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 215.40823
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000022888184
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34.922005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828588, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828589, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: arrival
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828589, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: slowingRadius
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224892574449828590, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1694587626984123993, guid: 687c00099f4b85647b0a24cd192ce2f7, type: 3}
+    - target: {fileID: 8224892574449828591, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
+      propertyPath: rigidBody
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a0c1776ea0a964046aa231e67663ac8b, type: 3}
