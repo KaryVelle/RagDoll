@@ -8,11 +8,17 @@ public class RoomCheck : MonoBehaviour
     public HingeJoint door;
     public ObstacleController obsController;
     private JointMotor motor;
+    public bool door2;
+   // public AudioSource rasputin;
 
 
     private void Start()
     {
         motor = door.motor;
+       // rasputin.Pause();
+       motor.targetVelocity = 100;
+       motor.force = 1000;
+       door.motor = motor;
     }
 
     void Update()
@@ -26,13 +32,12 @@ public class RoomCheck : MonoBehaviour
             }
         }
 
-        JointLimits limits = door.limits;
+       
         if (obsController.obstacleList.Count == 0)
         {
             OpenDoor();
-            limits.min = -180;
-            limits.max = 180;
-            door.limits = limits;
+            
+            
           
         }
         
@@ -41,8 +46,16 @@ public class RoomCheck : MonoBehaviour
 
     private void OpenDoor()
     {
-        motor.targetVelocity = 100f;
+       /* JointLimits limits = door.limits;
+        limits.min = -180;
+        limits.max = 180;
+        door.limits = limits;
+        motor.targetVelocity = -5000f;
         door.motor = motor;
+        Debug.Log("ABRETE");
+      //  rasputin.Play();*/
+
+      
     }
 
 }
