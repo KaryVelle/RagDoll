@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -6,41 +7,38 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+   public Rigidbody player;
+   public int speed;
 
-    [SerializeField] Rigidbody rb;
-    [SerializeField] int speed;
-    [SerializeField] float mouseX;
-    
+   private void Update()
+   {
+      if (Input.GetKeyDown("w"))
+      {
+        player.velocity = Vector3.forward * speed;
+      }
+      
+      if (Input.GetKeyDown("s"))
+      {
+          player.velocity = Vector3.forward * -1 * speed;
+      }
+      
+      if (Input.GetKeyDown("d"))
+      {
+          player.velocity = Vector3.right * speed ;
+      }
+      if (Input.GetKeyDown("a"))
+      {
+          player.velocity = Vector3.right * speed *-1;
+      }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb=GetComponent<Rigidbody>();
-    }
+      float mouseX = Input.GetAxis("Mouse X");
+      player.transform.Rotate(new Vector3(0,mouseX,0));
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown("d"))
-        {
-            rb.velocity= (new Vector3(1 * speed,0, 0) );
-        }
-        if (Input.GetKeyDown("a"))
-        {
-            rb.velocity = (new Vector3(1 * speed *-1, 0, 0));
-        }
-        if (Input.GetKeyDown("w"))
-        {
-            rb.velocity = (new Vector3(0 , 0, 1 * speed));
-        }
-        if (Input.GetKeyDown("s"))
-        {
-            rb.velocity = (new Vector3(0, 0, 1 * speed *-1));
-        }
 
-        mouseX = Input.GetAxis("Mouse X");
-       
-        rb.transform.Rotate(0, mouseX, 0);
 
-    }
+
+
+
+
+   }
 }
