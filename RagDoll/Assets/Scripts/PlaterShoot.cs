@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class PlaterShoot : MonoBehaviour
 {
-    public float speed = 20;
-    public Rigidbody projectile;
+    public float speed = 50;
+    public GameObject projectile;
     public Transform gun;
+    private Rigidbody rb;
  
  
  
     // Use this for initialization
-    void Start () {
-   
+    void Start ()
+    {
+        rb = projectile.GetComponent<Rigidbody>();
     }
    
     // Update is called once per frame
@@ -20,14 +22,17 @@ public class PlaterShoot : MonoBehaviour
  
         if (Input.GetButtonDown("Fire1"))
         {
-            Rigidbody instantiatedProjectile = Instantiate(projectile,
-                    gun.position ,Quaternion.identity
-                   );
- 
-            instantiatedProjectile.AddForce(transform.forward * speed); 
             
+            GameObject instantiatedProjectile = Instantiate(projectile, gun.position, Quaternion.identity);
+
+           
+            Rigidbody rb = instantiatedProjectile.GetComponent<Rigidbody>();
+
             
-            Destroy(projectile, 3);
+            rb.velocity = transform.forward * speed;
+
+           
+            Destroy(instantiatedProjectile, 2);
         }
     }
 }

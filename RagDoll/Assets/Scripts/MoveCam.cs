@@ -20,7 +20,7 @@ public class MoveCam : MonoBehaviour
     {
         mouseX = Input.GetAxis("Mouse X"); 
         mouseY = Input.GetAxis("Mouse Y");
-        cam.transform.Rotate(0, mouseX, 0);
+        cam.transform.Rotate(mouseY, mouseX, 0);
        
     }
 }

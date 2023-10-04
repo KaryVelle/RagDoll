@@ -13,7 +13,7 @@ public class Seek : SteeringBehavior
         distance = Vector3.Distance(target, position);
         if (distance < 20)
         {
-            //transform.LookAt(target);
+            transform.LookAt(target);
         desiredVelocity = (target - position).normalized * speed;
         
         if (arrival)

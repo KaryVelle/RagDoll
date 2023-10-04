@@ -7,7 +7,13 @@ public class RoomCheck : MonoBehaviour
 {
     public HingeJoint door;
     public ObstacleController obsController;
-    
+    private JointMotor motor;
+
+
+    private void Start()
+    {
+        motor = door.motor;
+    }
 
     void Update()
     {
@@ -23,11 +29,21 @@ public class RoomCheck : MonoBehaviour
         JointLimits limits = door.limits;
         if (obsController.obstacleList.Count == 0)
         {
+            OpenDoor();
             limits.min = -180;
             limits.max = 180;
             door.limits = limits;
+          
         }
-    }
         
+        
+    }
+
+    private void OpenDoor()
+    {
+        motor.targetVelocity = 100f;
+        door.motor = motor;
+    }
+
 }
     

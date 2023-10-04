@@ -73,9 +73,9 @@ public class RagdollController : MonoBehaviour
         mainRigidbody.isKinematic = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.transform.tag == "Hit")
+        if(other.transform.tag == "Hit")
         {
             mainRigidbody.AddExplosionForce(500f,transform.position,50f);
             value = true;

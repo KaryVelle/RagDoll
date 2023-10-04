@@ -19,7 +19,7 @@ public class BehaviorController : MonoBehaviour
         {
             if(behavior.target != null)
             {
-                transform.LookAt(behavior.target);
+                //transform.LookAt(behavior.target);
             }
             behavior.position = transform.position;
             totalForce += behavior.GetForce();
