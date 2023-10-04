@@ -40,6 +40,10 @@ public class RagdollController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.z == -2)
+        {
+            Destroy(transform.parent.gameObject);
+        }
         //if(Input.GetKeyDown(KeyCode.Space))
         {
             //Toggle();

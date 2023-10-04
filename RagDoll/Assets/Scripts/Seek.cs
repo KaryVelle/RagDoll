@@ -10,8 +10,10 @@ public class Seek : SteeringBehavior
     
     public override Vector3 GetForce()
     {
-        position = transform.position;
         distance = Vector3.Distance(target, position);
+        if (distance < 20)
+        {
+            //transform.LookAt(target);
         desiredVelocity = (target - position).normalized * speed;
         
         if (arrival)
@@ -30,7 +32,11 @@ public class Seek : SteeringBehavior
         Vector3 steering = desiredVelocity - velocity;
         velocity = Vector3.ClampMagnitude(velocity + steering, speed);
         return steering;
-        
+            
+        }
+
+        return Vector3.zero;
+
 
     }
 }

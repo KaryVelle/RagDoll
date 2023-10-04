@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fae6ae7e3dfb9940bd7184bfbbf994a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1694587626984123993, guid: 687c00099f4b85647b0a24cd192ce2f7, type: 3}
+  target: {fileID: 1694587626984123936, guid: 687c00099f4b85647b0a24cd192ce2f7, type: 3}
   seek: {fileID: 8224892574449828589}
 --- !u!114 &8224892574449828589
 MonoBehaviour:
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542ab222fa055ec42ba6829a655a2cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0.4
   desiredVelocity: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   position: {x: 0, y: 0, z: 0}

@@ -12,8 +12,8 @@ public class ObstacleController : MonoBehaviour
   public List<GameObject> obstacleList;
   public List<Vector3> ObstaclePosition;
   public float maxSpawn;
-  public float rangoX;
-  public float rangoY;
+  public float [] rangoX;
+  public float [] rangoZ;
 
   private void Start()
   {
@@ -21,7 +21,7 @@ public class ObstacleController : MonoBehaviour
     
     for (int i = 0; i <= total; i++)
     {
-      Vector3 randomPos = new Vector3(Random.Range(-rangoX, rangoX), 1f, Random.Range(-rangoY,rangoY));
+      Vector3 randomPos = new Vector3(Random.Range(rangoX[0], rangoX[1]), 1f, Random.Range(rangoZ[0],rangoZ[1]));
       if (IsPositionEmpty(randomPos))
       {
         GameObject NewInst = Instantiate(obstacle, randomPos, Quaternion.identity);
