@@ -73,9 +73,17 @@ public class RagdollController : MonoBehaviour
     {
         if(collision.transform.tag == "Hit")
         {
+            mainRigidbody.AddExplosionForce(500f,transform.position,50f);
             value = true;
             Toggle();
+            StartCoroutine(Death());
+
         }
     }
-   
+
+    private IEnumerator Death()
+    {
+        yield return new WaitForSeconds(3);
+        Destroy(transform.parent.gameObject);
+    }
 }

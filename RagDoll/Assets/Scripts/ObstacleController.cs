@@ -18,6 +18,7 @@ public class ObstacleController : MonoBehaviour
   private void Start()
   {
     float total = Random.Range(1, maxSpawn);
+    
     for (int i = 0; i <= total; i++)
     {
       Vector3 randomPos = new Vector3(Random.Range(-rangoX, rangoX), 1f, Random.Range(-rangoY,rangoY));

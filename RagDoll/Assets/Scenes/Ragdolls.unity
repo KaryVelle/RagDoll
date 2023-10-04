@@ -427,6 +427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1694587626984123936, guid: 687c00099f4b85647b0a24cd192ce2f7, type: 3}
+      propertyPath: m_TagString
+      value: Hit
+      objectReference: {fileID: 0}
     - target: {fileID: 1694587626984123941, guid: 687c00099f4b85647b0a24cd192ce2f7, type: 3}
       propertyPath: speed
       value: 3
@@ -781,6 +785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere
       objectReference: {fileID: 0}
+    - target: {fileID: 2607628643551023728, guid: 0dad81d5ed7d84a488948b70103650a9, type: 3}
+      propertyPath: m_TagString
+      value: Hit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0dad81d5ed7d84a488948b70103650a9, type: 3}
 --- !u!1001 &2260393004416760248
@@ -869,7 +877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7155192973254896904, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 13.59
       objectReference: {fileID: 0}
     - target: {fileID: 7155192973254896904, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
       propertyPath: m_LocalPosition.y
@@ -877,7 +885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7155192973254896904, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.71
       objectReference: {fileID: 0}
     - target: {fileID: 7155192973254896904, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
       propertyPath: m_LocalRotation.w
@@ -910,6 +918,18 @@ PrefabInstance:
     - target: {fileID: 7155192973254896910, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
       propertyPath: m_Name
       value: Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155192973254896911, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
+      propertyPath: rangoX
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155192973254896911, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
+      propertyPath: rangoY
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7155192973254896911, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
+      propertyPath: maxSpawn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7155192973254896911, guid: b910b0bd5adbe324bb90b2eedb6c8391, type: 3}
       propertyPath: obstacle

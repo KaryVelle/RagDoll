@@ -11,7 +11,15 @@ public class RoomCheck : MonoBehaviour
 
     void Update()
     {
-        
+        for(int i=obsController.obstacleList.Count - 1; i>=0; i--)
+        {
+            if (obsController.obstacleList[i].gameObject == null)
+            {
+                Destroy(obsController.obstacleList[i].gameObject);
+                obsController.obstacleList.RemoveAt(i);
+            }
+        }
+
         JointLimits limits = door.limits;
         if (obsController.obstacleList.Count == 0)
         {
