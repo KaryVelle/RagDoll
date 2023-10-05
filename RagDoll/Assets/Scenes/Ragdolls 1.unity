@@ -909,7 +909,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408433333}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -980,6 +980,18 @@ PrefabInstance:
     - target: {fileID: 1027347672136941812, guid: fad277db782827849bd47966ffee95e5, type: 3}
       propertyPath: m_TagString
       value: Hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027347672136941814, guid: fad277db782827849bd47966ffee95e5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027347672313078310, guid: fad277db782827849bd47966ffee95e5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1027347673033462516, guid: fad277db782827849bd47966ffee95e5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fad277db782827849bd47966ffee95e5, type: 3}
