@@ -55,6 +55,7 @@ public class RagdollController : MonoBehaviour
     public void Toggle()
     {
         value = !value;
+        
 
         foreach (var item in colliders)
         {
@@ -71,13 +72,17 @@ public class RagdollController : MonoBehaviour
         mainCollider.enabled = value;
         animator.enabled = value;
         mainRigidbody.isKinematic = true;
+        
+        foreach (Rigidbody rb in rigidbodies)
+        {
+            rb.AddForce(transform.up * 10, ForceMode.Impulse);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.transform.tag == "Hit")
         {
-            mainRigidbody.AddExplosionForce(500f,transform.position,50f);
             value = true;
             Toggle();
             StartCoroutine(Death());
